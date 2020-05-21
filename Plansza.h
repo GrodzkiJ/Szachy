@@ -20,7 +20,7 @@ public:
 	Plansza*** plansza;
 	Plansza();
 	~Plansza();
-	void ustawFigura(Figura* f, Kolor kolor, Rodzaj_figury rodzaj_figury);
+	void ustawFigura(Figura* f, string kolor, string rodzaj_figury);
 	Figura* wskFigura();
 };
 

@@ -13,65 +13,65 @@ Plansza::Plansza()
 			{
 				if (j == 0 || j == 7)
 				{
-					plansza[i][j]->ustawFigura(new Wieza(), Kolor::czarny, Rodzaj_figury::wieza);
+					plansza[i][j]->ustawFigura(new Wieza(), "czarny", "wieza");
 				}
 				if (j == 1 || j == 6)
 				{
-					plansza[i][j]->ustawFigura(new Skoczek(), Kolor::czarny, Rodzaj_figury::skoczek);
+					plansza[i][j]->ustawFigura(new Skoczek(), "czarny", "skoczek");
 				}
 				if (j == 2 || j == 5)
 				{
-					plansza[i][j]->ustawFigura(new Goniec(), Kolor::czarny, Rodzaj_figury::goniec);
+					plansza[i][j]->ustawFigura(new Goniec(), "czarny", "goniec");
 				}
 				if (j == 3)
 				{
-					plansza[i][j]->ustawFigura(new Hetman(), Kolor::czarny, Rodzaj_figury::hetman);
+					plansza[i][j]->ustawFigura(new Hetman(), "czarny", "hetman");
 				}
 				if (j == 4)
 				{
-					plansza[i][j]->ustawFigura(new Krol(), Kolor::czarny, Rodzaj_figury::krol);
+					plansza[i][j]->ustawFigura(new Krol(), "czarny", "krol");
 				}
 			}
 			if (i == 7)
 			{
 				if (j == 0 || j == 7)
 				{
-					plansza[i][j]->ustawFigura(new Wieza(), Kolor::bialy, Rodzaj_figury::wieza);
+					plansza[i][j]->ustawFigura(new Wieza(), "bialy", "wieza");
 				}
 				if (j == 1 || j == 6)
 				{
-					plansza[i][j]->ustawFigura(new Skoczek(), Kolor::bialy, Rodzaj_figury::skoczek);
+					plansza[i][j]->ustawFigura(new Skoczek(), "bialy", "skoczek");
 				}
 				if (j == 2 || j == 5)
 				{
-					plansza[i][j]->ustawFigura(new Goniec(), Kolor::bialy, Rodzaj_figury::goniec);
+					plansza[i][j]->ustawFigura(new Goniec(), "bialy", "goniec");
 				}
 				if (j == 3)
 				{
-					plansza[i][j]->ustawFigura(new Hetman(), Kolor::bialy, Rodzaj_figury::hetman);
+					plansza[i][j]->ustawFigura(new Hetman(), "bialy", "hetman");
 				}
 				if (j == 4)
 				{
-					plansza[i][j]->ustawFigura(new Krol(), Kolor::bialy, Rodzaj_figury::krol);
+					plansza[i][j]->ustawFigura(new Krol(), "bialy", "krol");
 				}
 			}
 			if (i == 1)
 			{
-				plansza[i][j]->ustawFigura(new Pion(), Kolor::czarny, Rodzaj_figury::pion);
+				plansza[i][j]->ustawFigura(new Pion(), "czarny", "pion");
 			}
 			if (i == 6)
 			{
-				plansza[i][j]->ustawFigura(new Pion(), Kolor::bialy, Rodzaj_figury::pion);
+				plansza[i][j]->ustawFigura(new Pion(), "bialy", "pion");
 			}
 			if (i > 1 && i < 6)
 			{
-				plansza[i][j]->ustawFigura(new Puste_pole(), Kolor::zero, Rodzaj_figury::brak);
+				plansza[i][j]->ustawFigura(new Puste_pole(), "brak", "brak");
 			}
 		}
 	}
 }
 
-void Plansza::ustawFigura(Figura* f, Kolor kolor, Rodzaj_figury rodzaj_figury)
+void Plansza::ustawFigura(Figura* f, string kolor, string rodzaj_figury)
 {
 	figura = f;
 	figura->kolor = kolor;

@@ -5,12 +5,12 @@ Figura::Figura()
 
 }
 
-Kolor Figura::getKolor()
+string Figura::getKolor()
 {
 	return kolor;
 }
 
-Rodzaj_figury Figura::getRodzajFigury()
+string Figura::getRodzajFigury()
 {
 	return rodzaj_figury;
 }
